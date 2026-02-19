@@ -1,0 +1,70 @@
+appnope==0.1.4
+asttokens==3.0.0
+Bottleneck @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_33wnmqdh9g/croot/bottleneck_1731058648266/work
+Brotli @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_d7pp3g74_g/croot/brotli-split_1736182638718/work
+certifi==2026.1.4
+charset-normalizer==3.4.4
+comm==0.2.3
+contourpy @ file:///private/var/folders/c_/qfmhj66j0tn016nkx_th4hxm0000gp/T/abs_6236u4rf19/croot/contourpy_1732540057596/work
+cycler @ file:///tmp/build/80754af9/cycler_1637851556182/work
+debugpy==1.8.17
+decorator==5.2.1
+exceptiongroup==1.3.0
+executing==2.2.1
+fonttools @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_706ove9ndu/croot/fonttools_1737039799828/work
+idna==3.11
+imageio @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_907lgo0h9q/croot/imageio_1738160289499/work
+ipykernel==6.30.1
+ipython==8.37.0
+jedi==0.19.2
+joblib @ file:///private/var/folders/c_/qfmhj66j0tn016nkx_th4hxm0000gp/T/abs_d7u3cjt1yc/croot/joblib_1754310209775/work
+jupyter_client==8.6.3
+jupyter_core==5.8.1
+kagglehub==0.4.3
+kagglesdk==0.1.15
+kiwisolver @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_92lgswl3y6/croot/kiwisolver_1737040154211/work
+lazy_loader @ file:///private/var/folders/c_/qfmhj66j0tn016nkx_th4hxm0000gp/T/abs_a1zssksyo7/croot/lazy_loader_1718176750068/work
+matplotlib==3.10.0
+matplotlib-inline==0.1.7
+nest-asyncio==1.6.0
+networkx @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_ba1do7fwxc/croot/networkx_1737043398715/work
+numexpr @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_9dass5qxdx/croot/numexpr_1752521725325/work
+numpy @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_32_ftq5mxa/croot/numpy_and_numpy_base_1747238033824/work/dist/numpy-2.2.5-cp310-cp310-macosx_10_15_x86_64.whl#sha256=714547d26885f1bc4565cae850a2e36e41857cb5fff5619a57a7e2283b836bb0
+opencv-python==4.13.0.92
+optype==0.9.3
+packaging==25.0
+pandas @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_ecxvylr68h/croot/pandas_1752846043443/work/dist/pandas-2.3.1-cp310-cp310-macosx_10_15_x86_64.whl#sha256=794b216858d376ccb85739202ef75cfd722feaab9547e01e0c851c920bbe6f27
+pandas-stubs==2.3.3.260113
+parso==0.8.5
+pexpect==4.9.0
+pillow @ file:///private/var/folders/c_/qfmhj66j0tn016nkx_th4hxm0000gp/T/abs_59qe1phg3h/croot/pillow_1752524533185/work
+platformdirs==4.5.0
+prompt_toolkit==3.0.52
+protobuf==6.33.5
+psutil==7.1.0
+ptyprocess==0.7.0
+pure_eval==0.2.3
+Pygments==2.19.2
+pyparsing @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_32bhy1idl3/croot/pyparsing_1731445537860/work
+python-dateutil==2.9.0.post0
+pytz @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_11bbnopadc/croot/pytz_1752135868440/work
+PyYAML==6.0.3
+pyzmq==27.1.0
+requests==2.32.5
+scikit-image @ file:///private/var/folders/c_/qfmhj66j0tn016nkx_th4hxm0000gp/T/abs_a8ar808_3l/croot/scikit-image_1750419484820/work
+scikit-learn @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_40dkuz7iuv/croot/scikit-learn_1753427399449/work
+scipy @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_1bvg93f7ku/croot/scipy_1747238043368/work/dist/scipy-1.15.3-cp310-cp310-macosx_10_15_x86_64.whl#sha256=15cbd3251181d4cc3f52115c248f6fe6ba10b2d57462acc3a4e7fc5c4003a1a5
+scipy-stubs==1.15.3.0
+six==1.17.0
+stack-data==0.6.3
+threadpoolctl @ file:///private/var/folders/c_/qfmhj66j0tn016nkx_th4hxm0000gp/T/abs_83z9rmqojb/croot/threadpoolctl_1719407811780/work
+tifffile @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_84kw_t11k3/croot/tifffile_1741164553911/work
+tornado==6.5.2
+tqdm==4.67.3
+traitlets==5.14.3
+types-pytz==2025.2.0.20251108
+typing_extensions==4.15.0
+tzdata @ file:///home/task_176829656558347/croot/python-tzdata_1768296637279/work
+unicodedata2 @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_c9zunc70re/croot/unicodedata2_1736544422992/work
+urllib3==2.6.3
+wcwidth==0.2.14
