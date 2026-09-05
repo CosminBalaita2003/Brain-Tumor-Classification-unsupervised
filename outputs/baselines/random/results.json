@@ -1,0 +1,17 @@
+{
+  "baseline": "random",
+  "seed": 42,
+  "classes": [
+    "not_tumor",
+    "tumor"
+  ],
+  "test_metrics": {
+    "ARI": 0.0009298239801838642,
+    "NMI": 0.001741792874663494,
+    "HungAcc": 0.5279187817258884,
+    "mapping": {
+      "0": 1,
+      "1": 0
+    }
+  }
+}

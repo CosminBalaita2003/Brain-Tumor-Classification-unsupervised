@@ -1,0 +1,19 @@
+{
+  "classes": [
+    "not_tumor",
+    "tumor"
+  ],
+  "class_to_label": {
+    "not_tumor": 0,
+    "tumor": 1
+  },
+  "source_to_binary": {
+    "no_tumor": "not_tumor",
+    "glioma_tumor": "tumor",
+    "meningioma_tumor": "tumor",
+    "pituitary_tumor": "tumor"
+  },
+  "seed": 42,
+  "validation_ratio": 0.2,
+  "duplicates_excluded_from_training": 157
+}

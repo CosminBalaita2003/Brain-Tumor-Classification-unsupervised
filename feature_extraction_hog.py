@@ -6,7 +6,6 @@ from typing import Iterable, List, Tuple, Union, Optional
 
 import numpy as np
 from skimage.io import imread
-from skimage.color import rgb2gray
 from skimage.transform import resize
 from skimage.feature import hog
 
@@ -37,13 +36,23 @@ def _flatten_paths_deep(obj) -> List[str]:
 def _read_grayscale(path: str) -> np.ndarray:
     img = imread(path)
     if img.ndim == 3:
-        img = rgb2gray(img)  # returns float in [0,1]
+
+        img = np.asarray(img[..., :3], dtype=np.float64)
+        if img.max() > 1.5:
+            img /= 255.0
+        img = (
+            0.2125 * img[..., 0]
+            + 0.7154 * img[..., 1]
+            + 0.0721 * img[..., 2]
+        )
     else:
-        img = img.astype(np.float32)
+        img = img.astype(np.float64)
         if img.max() > 1.5:
             img = img / 255.0
-    img = np.asarray(img, dtype=np.float32)
-    return img
+    img = np.asarray(img, dtype=np.float64)
+    if not np.all(np.isfinite(img)):
+        raise ValueError(f"Image contains non-finite values: {path}")
+    return np.clip(img, 0.0, 1.0)
 
 
 def extract_features(
@@ -64,7 +73,9 @@ def extract_features(
         try:
             img = _read_grayscale(p)
             if image_size is not None:
-                img = resize(img, image_size, anti_aliasing=True, preserve_range=True).astype(np.float32)
+                img = resize(
+                    img, image_size, anti_aliasing=True, preserve_range=True
+                ).astype(np.float64)
                 if img.max() > 1.5:
                     img = img / 255.0
 

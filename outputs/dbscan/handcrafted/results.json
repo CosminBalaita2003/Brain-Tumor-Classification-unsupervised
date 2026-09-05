@@ -1,0 +1,6529 @@
+{
+  "model": "DBSCAN",
+  "feature": "handcrafted",
+  "classes": [
+    "not_tumor",
+    "tumor"
+  ],
+  "selection_metric": "validation NMI with cluster/noise penalty",
+  "best_params": {
+    "pca_dim": 10,
+    "metric": "euclidean",
+    "eps": 2.0,
+    "min_samples": 5
+  },
+  "validation_metrics": {
+    "ARI": 0.3049752438003277,
+    "NMI": 0.2932708667752119,
+    "mapped_accuracy": 0.8450184501845018,
+    "silhouette": 0.22913312567311866,
+    "mapping": {
+      "-1": 0,
+      "0": 1
+    }
+  },
+  "test_metrics": {
+    "ARI": -0.015446306179050307,
+    "NMI": 0.10804955938873614,
+    "mapped_accuracy": 0.7461928934010152,
+    "silhouette": 0.7347528490375201,
+    "mapping": {
+      "-1": 1,
+      "0": 0
+    }
+  },
+  "validation_clusters": 2,
+  "test_clusters": 6,
+  "test_noise_points": 349,
+  "grid_results": [
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "euclidean",
+        "eps": 0.1,
+        "min_samples": 3
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "euclidean",
+        "eps": 0.1,
+        "min_samples": 5
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "euclidean",
+        "eps": 0.1,
+        "min_samples": 10
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "euclidean",
+        "eps": 0.1,
+        "min_samples": 15
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "euclidean",
+        "eps": 0.1,
+        "min_samples": 20
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "euclidean",
+        "eps": 0.2,
+        "min_samples": 3
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "euclidean",
+        "eps": 0.2,
+        "min_samples": 5
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "euclidean",
+        "eps": 0.2,
+        "min_samples": 10
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "euclidean",
+        "eps": 0.2,
+        "min_samples": 15
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "euclidean",
+        "eps": 0.2,
+        "min_samples": 20
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "euclidean",
+        "eps": 0.3,
+        "min_samples": 3
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "euclidean",
+        "eps": 0.3,
+        "min_samples": 5
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "euclidean",
+        "eps": 0.3,
+        "min_samples": 10
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "euclidean",
+        "eps": 0.3,
+        "min_samples": 15
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "euclidean",
+        "eps": 0.3,
+        "min_samples": 20
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "euclidean",
+        "eps": 0.5,
+        "min_samples": 3
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "euclidean",
+        "eps": 0.5,
+        "min_samples": 5
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "euclidean",
+        "eps": 0.5,
+        "min_samples": 10
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "euclidean",
+        "eps": 0.5,
+        "min_samples": 15
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "euclidean",
+        "eps": 0.5,
+        "min_samples": 20
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "euclidean",
+        "eps": 0.7,
+        "min_samples": 3
+      },
+      "validation": {
+        "ARI": -0.009394073106809257,
+        "NMI": 0.0032497620074683955,
+        "mapped_accuracy": 0.8948339483394834,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1,
+          "0": 0
+        }
+      },
+      "clusters": 1,
+      "noise_points": 539,
+      "selection_score": -0.09647348522500393
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "euclidean",
+        "eps": 0.7,
+        "min_samples": 5
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "euclidean",
+        "eps": 0.7,
+        "min_samples": 10
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "euclidean",
+        "eps": 0.7,
+        "min_samples": 15
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "euclidean",
+        "eps": 0.7,
+        "min_samples": 20
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "euclidean",
+        "eps": 1.0,
+        "min_samples": 3
+      },
+      "validation": {
+        "ARI": -0.09773242759190444,
+        "NMI": 0.024725644529178185,
+        "mapped_accuracy": 0.8948339483394834,
+        "silhouette": 0.5902434453798707,
+        "mapping": {
+          "-1": 1,
+          "0": 0
+        }
+      },
+      "clusters": 18,
+      "noise_points": 483,
+      "selection_score": -0.8198315510427776
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "euclidean",
+        "eps": 1.0,
+        "min_samples": 5
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "euclidean",
+        "eps": 1.0,
+        "min_samples": 10
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "euclidean",
+        "eps": 1.0,
+        "min_samples": 15
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "euclidean",
+        "eps": 1.0,
+        "min_samples": 20
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "euclidean",
+        "eps": 1.5,
+        "min_samples": 3
+      },
+      "validation": {
+        "ARI": -0.05818018990100635,
+        "NMI": 0.08236197312363693,
+        "mapped_accuracy": 0.6457564575645757,
+        "silhouette": 0.14294156985789436,
+        "mapping": {
+          "-1": 0,
+          "3": 1
+        }
+      },
+      "clusters": 18,
+      "noise_points": 246,
+      "selection_score": -0.7403317538136325
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "euclidean",
+        "eps": 1.5,
+        "min_samples": 5
+      },
+      "validation": {
+        "ARI": -0.1062445248131819,
+        "NMI": 0.05770446715384648,
+        "mapped_accuracy": 0.8800738007380073,
+        "silhouette": 0.2335679785026156,
+        "mapping": {
+          "-1": 1,
+          "0": 0
+        }
+      },
+      "clusters": 14,
+      "noise_points": 332,
+      "selection_score": -0.5729228391192164
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "euclidean",
+        "eps": 1.5,
+        "min_samples": 10
+      },
+      "validation": {
+        "ARI": -0.07910493376450298,
+        "NMI": 0.024562544779822757,
+        "mapped_accuracy": 0.8745387453874539,
+        "silhouette": 0.5371368345085619,
+        "mapping": {
+          "-1": 1,
+          "0": 0
+        }
+      },
+      "clusters": 3,
+      "noise_points": 501,
+      "selection_score": -0.07165516739729902
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "euclidean",
+        "eps": 1.5,
+        "min_samples": 15
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "euclidean",
+        "eps": 1.5,
+        "min_samples": 20
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "euclidean",
+        "eps": 2.0,
+        "min_samples": 3
+      },
+      "validation": {
+        "ARI": 0.3256873809386661,
+        "NMI": 0.3038768767398213,
+        "mapped_accuracy": 0.8616236162361623,
+        "silhouette": 0.18970868476341263,
+        "mapping": {
+          "-1": 0,
+          "0": 1
+        }
+      },
+      "clusters": 3,
+      "noise_points": 129,
+      "selection_score": 0.24197650773613125
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "euclidean",
+        "eps": 2.0,
+        "min_samples": 5
+      },
+      "validation": {
+        "ARI": 0.3049752438003277,
+        "NMI": 0.2932708667752119,
+        "mapped_accuracy": 0.8450184501845018,
+        "silhouette": 0.22913312567311866,
+        "mapping": {
+          "-1": 0,
+          "0": 1
+        }
+      },
+      "clusters": 2,
+      "noise_points": 138,
+      "selection_score": 0.28054023946893886
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "euclidean",
+        "eps": 2.0,
+        "min_samples": 10
+      },
+      "validation": {
+        "ARI": 0.06873691074597159,
+        "NMI": 0.1563984755784188,
+        "mapped_accuracy": 0.7250922509225092,
+        "silhouette": 0.219628013148282,
+        "mapping": {
+          "-1": 0,
+          "0": 1
+        }
+      },
+      "clusters": 4,
+      "noise_points": 203,
+      "selection_score": 0.0376715383090461
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "euclidean",
+        "eps": 2.0,
+        "min_samples": 15
+      },
+      "validation": {
+        "ARI": -0.04748843891789753,
+        "NMI": 0.09448254740813797,
+        "mapped_accuracy": 0.5424354243542435,
+        "silhouette": 0.16680629672846417,
+        "mapping": {
+          "-1": 1,
+          "0": 0
+        }
+      },
+      "clusters": 3,
+      "noise_points": 320,
+      "selection_score": 0.014962252205185933
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "euclidean",
+        "eps": 2.0,
+        "min_samples": 20
+      },
+      "validation": {
+        "ARI": -0.0855855400690575,
+        "NMI": 0.06675175683851407,
+        "mapped_accuracy": 0.6586715867158671,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1,
+          "0": 0
+        }
+      },
+      "clusters": 1,
+      "noise_points": 411,
+      "selection_score": -0.02116337231277745
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "cosine",
+        "eps": 0.1,
+        "min_samples": 3
+      },
+      "validation": {
+        "ARI": 0.3116033946801906,
+        "NMI": 0.22759413451138555,
+        "mapped_accuracy": 0.8191881918819188,
+        "silhouette": -0.13766103487878503,
+        "mapping": {
+          "-1": 0,
+          "2": 1
+        }
+      },
+      "clusters": 8,
+      "noise_points": 96,
+      "selection_score": -0.08126195404950011
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "cosine",
+        "eps": 0.1,
+        "min_samples": 5
+      },
+      "validation": {
+        "ARI": 0.06080016828150553,
+        "NMI": 0.14769568224286314,
+        "mapped_accuracy": 0.7822878228782287,
+        "silhouette": 0.10357257316089942,
+        "mapping": {
+          "-1": 0,
+          "1": 1
+        }
+      },
+      "clusters": 5,
+      "noise_points": 150,
+      "selection_score": -0.016141956133520645
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "cosine",
+        "eps": 0.1,
+        "min_samples": 10
+      },
+      "validation": {
+        "ARI": 0.013911330967962373,
+        "NMI": 0.11723971704478522,
+        "mapped_accuracy": 0.6826568265682657,
+        "silhouette": 0.3302189767148484,
+        "mapping": {
+          "-1": 0,
+          "1": 1
+        }
+      },
+      "clusters": 4,
+      "noise_points": 204,
+      "selection_score": -0.0015794711470967018
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "cosine",
+        "eps": 0.1,
+        "min_samples": 15
+      },
+      "validation": {
+        "ARI": -0.032039921547055955,
+        "NMI": 0.10281494787085836,
+        "mapped_accuracy": 0.6439114391143912,
+        "silhouette": 0.365995447040395,
+        "mapping": {
+          "-1": 0,
+          "0": 1
+        }
+      },
+      "clusters": 3,
+      "noise_points": 245,
+      "selection_score": 0.030213471856098212
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "cosine",
+        "eps": 0.1,
+        "min_samples": 20
+      },
+      "validation": {
+        "ARI": -0.04401061864081697,
+        "NMI": 0.0950563765133076,
+        "mapped_accuracy": 0.6051660516605166,
+        "silhouette": 0.5355598955956183,
+        "mapping": {
+          "-1": 1,
+          "0": 0
+        }
+      },
+      "clusters": 2,
+      "noise_points": 276,
+      "selection_score": 0.06959512190076148
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "cosine",
+        "eps": 0.2,
+        "min_samples": 3
+      },
+      "validation": {
+        "ARI": 0.1914728693389868,
+        "NMI": 0.10061241373303154,
+        "mapped_accuracy": 0.9077490774907749,
+        "silhouette": null,
+        "mapping": {
+          "-1": 0,
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 12,
+      "selection_score": 0.04950540266292083
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "cosine",
+        "eps": 0.2,
+        "min_samples": 5
+      },
+      "validation": {
+        "ARI": 0.1858397173826006,
+        "NMI": 0.0911558459083112,
+        "mapped_accuracy": 0.9059040590405905,
+        "silhouette": null,
+        "mapping": {
+          "-1": 0,
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 13,
+      "selection_score": 0.03995658391569128
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "cosine",
+        "eps": 0.2,
+        "min_samples": 10
+      },
+      "validation": {
+        "ARI": 0.22118038866115322,
+        "NMI": 0.08721263103374502,
+        "mapped_accuracy": 0.8966789667896679,
+        "silhouette": null,
+        "mapping": {
+          "-1": 0,
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 26,
+      "selection_score": 0.03481410704850516
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "cosine",
+        "eps": 0.2,
+        "min_samples": 15
+      },
+      "validation": {
+        "ARI": 0.4814059256882417,
+        "NMI": 0.26917989165815587,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": 0.5301346604161745,
+        "mapping": {
+          "0": 0,
+          "1": 1
+        }
+      },
+      "clusters": 2,
+      "noise_points": 39,
+      "selection_score": 0.2655821056802961
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "cosine",
+        "eps": 0.2,
+        "min_samples": 20
+      },
+      "validation": {
+        "ARI": 0.35658304916108763,
+        "NMI": 0.21298512446409384,
+        "mapped_accuracy": 0.8321033210332104,
+        "silhouette": 0.5891070593879042,
+        "mapping": {
+          "-1": 0,
+          "0": 1
+        }
+      },
+      "clusters": 2,
+      "noise_points": 95,
+      "selection_score": 0.20422128682571747
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "cosine",
+        "eps": 0.3,
+        "min_samples": 3
+      },
+      "validation": {
+        "ARI": 0.02927204528796944,
+        "NMI": 0.02529016845050024,
+        "mapped_accuracy": 0.9022140221402214,
+        "silhouette": null,
+        "mapping": {
+          "-1": 0,
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 1,
+      "selection_score": -0.024802082472008987
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "cosine",
+        "eps": 0.3,
+        "min_samples": 5
+      },
+      "validation": {
+        "ARI": 0.02927204528796944,
+        "NMI": 0.02529016845050024,
+        "mapped_accuracy": 0.9022140221402214,
+        "silhouette": null,
+        "mapping": {
+          "-1": 0,
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 1,
+      "selection_score": -0.024802082472008987
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "cosine",
+        "eps": 0.3,
+        "min_samples": 10
+      },
+      "validation": {
+        "ARI": 0.08568504305778221,
+        "NMI": 0.07199305819721852,
+        "mapped_accuracy": 0.9059040590405905,
+        "silhouette": null,
+        "mapping": {
+          "-1": 0,
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 3,
+      "selection_score": 0.02171630542969084
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "cosine",
+        "eps": 0.3,
+        "min_samples": 15
+      },
+      "validation": {
+        "ARI": 0.11288677884532465,
+        "NMI": 0.09391571190610978,
+        "mapped_accuracy": 0.9077490774907749,
+        "silhouette": null,
+        "mapping": {
+          "-1": 0,
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 4,
+      "selection_score": 0.04354670821607288
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "cosine",
+        "eps": 0.3,
+        "min_samples": 20
+      },
+      "validation": {
+        "ARI": 0.1394564065405003,
+        "NMI": 0.11507824768970332,
+        "mapped_accuracy": 0.9095940959409594,
+        "silhouette": null,
+        "mapping": {
+          "-1": 0,
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 5,
+      "selection_score": 0.0646169930771572
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "cosine",
+        "eps": 0.5,
+        "min_samples": 3
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "cosine",
+        "eps": 0.5,
+        "min_samples": 5
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "cosine",
+        "eps": 0.5,
+        "min_samples": 10
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "cosine",
+        "eps": 0.5,
+        "min_samples": 15
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "cosine",
+        "eps": 0.5,
+        "min_samples": 20
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "cosine",
+        "eps": 0.7,
+        "min_samples": 3
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "cosine",
+        "eps": 0.7,
+        "min_samples": 5
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "cosine",
+        "eps": 0.7,
+        "min_samples": 10
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "cosine",
+        "eps": 0.7,
+        "min_samples": 15
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "cosine",
+        "eps": 0.7,
+        "min_samples": 20
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "cosine",
+        "eps": 1.0,
+        "min_samples": 3
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "cosine",
+        "eps": 1.0,
+        "min_samples": 5
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "cosine",
+        "eps": 1.0,
+        "min_samples": 10
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "cosine",
+        "eps": 1.0,
+        "min_samples": 15
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "cosine",
+        "eps": 1.0,
+        "min_samples": 20
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "cosine",
+        "eps": 1.5,
+        "min_samples": 3
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "cosine",
+        "eps": 1.5,
+        "min_samples": 5
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "cosine",
+        "eps": 1.5,
+        "min_samples": 10
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "cosine",
+        "eps": 1.5,
+        "min_samples": 15
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "cosine",
+        "eps": 1.5,
+        "min_samples": 20
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "cosine",
+        "eps": 2.0,
+        "min_samples": 3
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "cosine",
+        "eps": 2.0,
+        "min_samples": 5
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "cosine",
+        "eps": 2.0,
+        "min_samples": 10
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "cosine",
+        "eps": 2.0,
+        "min_samples": 15
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "metric": "cosine",
+        "eps": 2.0,
+        "min_samples": 20
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "euclidean",
+        "eps": 0.1,
+        "min_samples": 3
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "euclidean",
+        "eps": 0.1,
+        "min_samples": 5
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "euclidean",
+        "eps": 0.1,
+        "min_samples": 10
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "euclidean",
+        "eps": 0.1,
+        "min_samples": 15
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "euclidean",
+        "eps": 0.1,
+        "min_samples": 20
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "euclidean",
+        "eps": 0.2,
+        "min_samples": 3
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "euclidean",
+        "eps": 0.2,
+        "min_samples": 5
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "euclidean",
+        "eps": 0.2,
+        "min_samples": 10
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "euclidean",
+        "eps": 0.2,
+        "min_samples": 15
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "euclidean",
+        "eps": 0.2,
+        "min_samples": 20
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "euclidean",
+        "eps": 0.3,
+        "min_samples": 3
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "euclidean",
+        "eps": 0.3,
+        "min_samples": 5
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "euclidean",
+        "eps": 0.3,
+        "min_samples": 10
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "euclidean",
+        "eps": 0.3,
+        "min_samples": 15
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "euclidean",
+        "eps": 0.3,
+        "min_samples": 20
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "euclidean",
+        "eps": 0.5,
+        "min_samples": 3
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "euclidean",
+        "eps": 0.5,
+        "min_samples": 5
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "euclidean",
+        "eps": 0.5,
+        "min_samples": 10
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "euclidean",
+        "eps": 0.5,
+        "min_samples": 15
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "euclidean",
+        "eps": 0.5,
+        "min_samples": 20
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "euclidean",
+        "eps": 0.7,
+        "min_samples": 3
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "euclidean",
+        "eps": 0.7,
+        "min_samples": 5
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "euclidean",
+        "eps": 0.7,
+        "min_samples": 10
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "euclidean",
+        "eps": 0.7,
+        "min_samples": 15
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "euclidean",
+        "eps": 0.7,
+        "min_samples": 20
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "euclidean",
+        "eps": 1.0,
+        "min_samples": 3
+      },
+      "validation": {
+        "ARI": -0.020674756884586306,
+        "NMI": 0.006788263816925139,
+        "mapped_accuracy": 0.8929889298892989,
+        "silhouette": 0.8648467300033739,
+        "mapping": {
+          "-1": 1,
+          "0": 0
+        }
+      },
+      "clusters": 2,
+      "noise_points": 535,
+      "selection_score": -0.04256597972551028
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "euclidean",
+        "eps": 1.0,
+        "min_samples": 5
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "euclidean",
+        "eps": 1.0,
+        "min_samples": 10
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "euclidean",
+        "eps": 1.0,
+        "min_samples": 15
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "euclidean",
+        "eps": 1.0,
+        "min_samples": 20
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "euclidean",
+        "eps": 1.5,
+        "min_samples": 3
+      },
+      "validation": {
+        "ARI": -0.1237738191193337,
+        "NMI": 0.03665084553556068,
+        "mapped_accuracy": 0.8892988929889298,
+        "silhouette": 0.32597168382448893,
+        "mapping": {
+          "-1": 1,
+          "0": 0
+        }
+      },
+      "clusters": 28,
+      "noise_points": 403,
+      "selection_score": -1.300526276235657
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "euclidean",
+        "eps": 1.5,
+        "min_samples": 5
+      },
+      "validation": {
+        "ARI": -0.07671466672619222,
+        "NMI": 0.021851170061154137,
+        "mapped_accuracy": 0.8892988929889298,
+        "silhouette": 0.28694288926872963,
+        "mapping": {
+          "-1": 1,
+          "0": 0
+        }
+      },
+      "clusters": 6,
+      "noise_points": 504,
+      "selection_score": -0.22464329488349533
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "euclidean",
+        "eps": 1.5,
+        "min_samples": 10
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "euclidean",
+        "eps": 1.5,
+        "min_samples": 15
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "euclidean",
+        "eps": 1.5,
+        "min_samples": 20
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "euclidean",
+        "eps": 2.0,
+        "min_samples": 3
+      },
+      "validation": {
+        "ARI": 0.01919256630701507,
+        "NMI": 0.12185242618417408,
+        "mapped_accuracy": 0.7232472324723247,
+        "silhouette": 0.07994838711038847,
+        "mapping": {
+          "-1": 0,
+          "0": 1
+        }
+      },
+      "clusters": 11,
+      "noise_points": 204,
+      "selection_score": -0.3469667620077079
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "euclidean",
+        "eps": 2.0,
+        "min_samples": 5
+      },
+      "validation": {
+        "ARI": -0.016720197646468864,
+        "NMI": 0.10276403738214956,
+        "mapped_accuracy": 0.6402214022140221,
+        "silhouette": 0.08146907852814796,
+        "mapping": {
+          "-1": 0,
+          "0": 1
+        }
+      },
+      "clusters": 11,
+      "noise_points": 249,
+      "selection_score": -0.3702064423226475
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "euclidean",
+        "eps": 2.0,
+        "min_samples": 10
+      },
+      "validation": {
+        "ARI": -0.09047453971894202,
+        "NMI": 0.06455800570236328,
+        "mapped_accuracy": 0.8819188191881919,
+        "silhouette": 0.13823017675038593,
+        "mapping": {
+          "-1": 1,
+          "0": 0
+        }
+      },
+      "clusters": 3,
+      "noise_points": 396,
+      "selection_score": -0.021973359611289857
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "euclidean",
+        "eps": 2.0,
+        "min_samples": 15
+      },
+      "validation": {
+        "ARI": -0.10730853832440918,
+        "NMI": 0.038965819889763914,
+        "mapped_accuracy": 0.8450184501845018,
+        "silhouette": 0.33620738279131124,
+        "mapping": {
+          "-1": 1,
+          "0": 0
+        }
+      },
+      "clusters": 3,
+      "noise_points": 456,
+      "selection_score": -0.05310060077444274
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "euclidean",
+        "eps": 2.0,
+        "min_samples": 20
+      },
+      "validation": {
+        "ARI": -0.048215458731498885,
+        "NMI": 0.016382282772707216,
+        "mapped_accuracy": 0.8634686346863468,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1,
+          "0": 0
+        }
+      },
+      "clusters": 1,
+      "noise_points": 522,
+      "selection_score": -0.08177269877710829
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "cosine",
+        "eps": 0.1,
+        "min_samples": 3
+      },
+      "validation": {
+        "ARI": 0.021103356230655346,
+        "NMI": 0.1246126077294964,
+        "mapped_accuracy": 0.7269372693726938,
+        "silhouette": -0.03475800065848113,
+        "mapping": {
+          "-1": 0,
+          "1": 1
+        }
+      },
+      "clusters": 9,
+      "noise_points": 190,
+      "selection_score": -0.24291506754725642
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "cosine",
+        "eps": 0.1,
+        "min_samples": 5
+      },
+      "validation": {
+        "ARI": -0.012600827738823537,
+        "NMI": 0.10918855301887857,
+        "mapped_accuracy": 0.6568265682656826,
+        "silhouette": 0.23828650398780585,
+        "mapping": {
+          "-1": 0,
+          "0": 1
+        }
+      },
+      "clusters": 4,
+      "noise_points": 234,
+      "selection_score": -0.012398162848280103
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "cosine",
+        "eps": 0.1,
+        "min_samples": 10
+      },
+      "validation": {
+        "ARI": -0.06486332907369569,
+        "NMI": 0.0765210530136501,
+        "mapped_accuracy": 0.6180811808118081,
+        "silhouette": 0.38150046682831024,
+        "mapping": {
+          "-1": 1,
+          "0": 0
+        }
+      },
+      "clusters": 5,
+      "noise_points": 292,
+      "selection_score": -0.10041621635904366
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "cosine",
+        "eps": 0.1,
+        "min_samples": 15
+      },
+      "validation": {
+        "ARI": -0.07894769549946644,
+        "NMI": 0.06402427779844343,
+        "mapped_accuracy": 0.6383763837638377,
+        "silhouette": 0.4952004913639404,
+        "mapping": {
+          "-1": 1,
+          "0": 0
+        }
+      },
+      "clusters": 3,
+      "noise_points": 346,
+      "selection_score": -0.017894541389748463
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "cosine",
+        "eps": 0.1,
+        "min_samples": 20
+      },
+      "validation": {
+        "ARI": -0.0769168813581497,
+        "NMI": 0.05393190946070829,
+        "mapped_accuracy": 0.6457564575645757,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1,
+          "0": 0
+        }
+      },
+      "clusters": 1,
+      "noise_points": 402,
+      "selection_score": -0.033152961388000196
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "cosine",
+        "eps": 0.2,
+        "min_samples": 3
+      },
+      "validation": {
+        "ARI": 0.28532583258008754,
+        "NMI": 0.11677913880429353,
+        "mapped_accuracy": 0.8985239852398524,
+        "silhouette": 0.5367577087047102,
+        "mapping": {
+          "-1": 0,
+          "0": 1
+        }
+      },
+      "clusters": 2,
+      "noise_points": 33,
+      "selection_score": 0.1137348583614891
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "cosine",
+        "eps": 0.2,
+        "min_samples": 5
+      },
+      "validation": {
+        "ARI": 0.32612033718822636,
+        "NMI": 0.145279973510545,
+        "mapped_accuracy": 0.8966789667896679,
+        "silhouette": null,
+        "mapping": {
+          "-1": 0,
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 44,
+      "selection_score": 0.0912209329201391
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "cosine",
+        "eps": 0.2,
+        "min_samples": 10
+      },
+      "validation": {
+        "ARI": 0.39076510720270097,
+        "NMI": 0.27299333204443954,
+        "mapped_accuracy": 0.8745387453874539,
+        "silhouette": 0.010921637287629626,
+        "mapping": {
+          "-1": 0,
+          "1": 1
+        }
+      },
+      "clusters": 3,
+      "noise_points": 80,
+      "selection_score": 0.21561325824370153
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "cosine",
+        "eps": 0.2,
+        "min_samples": 15
+      },
+      "validation": {
+        "ARI": 0.08431622647301967,
+        "NMI": 0.1616804402298386,
+        "mapped_accuracy": 0.7970479704797048,
+        "silhouette": 0.39979003995519313,
+        "mapping": {
+          "-1": 0,
+          "0": 1
+        }
+      },
+      "clusters": 3,
+      "noise_points": 140,
+      "selection_score": 0.09876531107854708
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "cosine",
+        "eps": 0.2,
+        "min_samples": 20
+      },
+      "validation": {
+        "ARI": 0.0542662115100924,
+        "NMI": 0.16627959389763788,
+        "mapped_accuracy": 0.7822878228782287,
+        "silhouette": 0.41944154663724104,
+        "mapping": {
+          "-1": 0,
+          "0": 1
+        }
+      },
+      "clusters": 2,
+      "noise_points": 170,
+      "selection_score": 0.1505969370710696
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "cosine",
+        "eps": 0.3,
+        "min_samples": 3
+      },
+      "validation": {
+        "ARI": 0.1394564065405003,
+        "NMI": 0.11507824768970332,
+        "mapped_accuracy": 0.9095940959409594,
+        "silhouette": null,
+        "mapping": {
+          "-1": 0,
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 5,
+      "selection_score": 0.0646169930771572
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "cosine",
+        "eps": 0.3,
+        "min_samples": 5
+      },
+      "validation": {
+        "ARI": 0.1908034453234169,
+        "NMI": 0.15550417073617415,
+        "mapped_accuracy": 0.9132841328413284,
+        "silhouette": null,
+        "mapping": {
+          "-1": 0,
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 7,
+      "selection_score": 0.10485841427860956
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "cosine",
+        "eps": 0.3,
+        "min_samples": 10
+      },
+      "validation": {
+        "ARI": 0.22690346064812905,
+        "NMI": 0.14324326632657608,
+        "mapped_accuracy": 0.9132841328413284,
+        "silhouette": null,
+        "mapping": {
+          "-1": 0,
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 11,
+      "selection_score": 0.0922285061789746
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "cosine",
+        "eps": 0.3,
+        "min_samples": 15
+      },
+      "validation": {
+        "ARI": 0.1972932369534745,
+        "NMI": 0.08983093017974485,
+        "mapped_accuracy": 0.9040590405904059,
+        "silhouette": null,
+        "mapping": {
+          "-1": 0,
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 16,
+      "selection_score": 0.03835491541959724
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "cosine",
+        "eps": 0.3,
+        "min_samples": 20
+      },
+      "validation": {
+        "ARI": 0.19709012619619287,
+        "NMI": 0.07850677837835524,
+        "mapped_accuracy": 0.8985239852398524,
+        "silhouette": null,
+        "mapping": {
+          "-1": 0,
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 21,
+      "selection_score": 0.026569509005661504
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "cosine",
+        "eps": 0.5,
+        "min_samples": 3
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "cosine",
+        "eps": 0.5,
+        "min_samples": 5
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "cosine",
+        "eps": 0.5,
+        "min_samples": 10
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "cosine",
+        "eps": 0.5,
+        "min_samples": 15
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "cosine",
+        "eps": 0.5,
+        "min_samples": 20
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "cosine",
+        "eps": 0.7,
+        "min_samples": 3
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "cosine",
+        "eps": 0.7,
+        "min_samples": 5
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "cosine",
+        "eps": 0.7,
+        "min_samples": 10
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "cosine",
+        "eps": 0.7,
+        "min_samples": 15
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "cosine",
+        "eps": 0.7,
+        "min_samples": 20
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "cosine",
+        "eps": 1.0,
+        "min_samples": 3
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "cosine",
+        "eps": 1.0,
+        "min_samples": 5
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "cosine",
+        "eps": 1.0,
+        "min_samples": 10
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "cosine",
+        "eps": 1.0,
+        "min_samples": 15
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "cosine",
+        "eps": 1.0,
+        "min_samples": 20
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "cosine",
+        "eps": 1.5,
+        "min_samples": 3
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "cosine",
+        "eps": 1.5,
+        "min_samples": 5
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "cosine",
+        "eps": 1.5,
+        "min_samples": 10
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "cosine",
+        "eps": 1.5,
+        "min_samples": 15
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "cosine",
+        "eps": 1.5,
+        "min_samples": 20
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "cosine",
+        "eps": 2.0,
+        "min_samples": 3
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "cosine",
+        "eps": 2.0,
+        "min_samples": 5
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "cosine",
+        "eps": 2.0,
+        "min_samples": 10
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "cosine",
+        "eps": 2.0,
+        "min_samples": 15
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "metric": "cosine",
+        "eps": 2.0,
+        "min_samples": 20
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "euclidean",
+        "eps": 0.1,
+        "min_samples": 3
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "euclidean",
+        "eps": 0.1,
+        "min_samples": 5
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "euclidean",
+        "eps": 0.1,
+        "min_samples": 10
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "euclidean",
+        "eps": 0.1,
+        "min_samples": 15
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "euclidean",
+        "eps": 0.1,
+        "min_samples": 20
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "euclidean",
+        "eps": 0.2,
+        "min_samples": 3
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "euclidean",
+        "eps": 0.2,
+        "min_samples": 5
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "euclidean",
+        "eps": 0.2,
+        "min_samples": 10
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "euclidean",
+        "eps": 0.2,
+        "min_samples": 15
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "euclidean",
+        "eps": 0.2,
+        "min_samples": 20
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "euclidean",
+        "eps": 0.3,
+        "min_samples": 3
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "euclidean",
+        "eps": 0.3,
+        "min_samples": 5
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "euclidean",
+        "eps": 0.3,
+        "min_samples": 10
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "euclidean",
+        "eps": 0.3,
+        "min_samples": 15
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "euclidean",
+        "eps": 0.3,
+        "min_samples": 20
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "euclidean",
+        "eps": 0.5,
+        "min_samples": 3
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "euclidean",
+        "eps": 0.5,
+        "min_samples": 5
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "euclidean",
+        "eps": 0.5,
+        "min_samples": 10
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "euclidean",
+        "eps": 0.5,
+        "min_samples": 15
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "euclidean",
+        "eps": 0.5,
+        "min_samples": 20
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "euclidean",
+        "eps": 0.7,
+        "min_samples": 3
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "euclidean",
+        "eps": 0.7,
+        "min_samples": 5
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "euclidean",
+        "eps": 0.7,
+        "min_samples": 10
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "euclidean",
+        "eps": 0.7,
+        "min_samples": 15
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "euclidean",
+        "eps": 0.7,
+        "min_samples": 20
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "euclidean",
+        "eps": 1.0,
+        "min_samples": 3
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "euclidean",
+        "eps": 1.0,
+        "min_samples": 5
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "euclidean",
+        "eps": 1.0,
+        "min_samples": 10
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "euclidean",
+        "eps": 1.0,
+        "min_samples": 15
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "euclidean",
+        "eps": 1.0,
+        "min_samples": 20
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "euclidean",
+        "eps": 1.5,
+        "min_samples": 3
+      },
+      "validation": {
+        "ARI": -0.10709093159621838,
+        "NMI": 0.028071526103534573,
+        "mapped_accuracy": 0.8948339483394834,
+        "silhouette": 0.4081483901181225,
+        "mapping": {
+          "-1": 1,
+          "0": 0
+        }
+      },
+      "clusters": 18,
+      "noise_points": 468,
+      "selection_score": -0.8151019056307828
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "euclidean",
+        "eps": 1.5,
+        "min_samples": 5
+      },
+      "validation": {
+        "ARI": -0.02825909782169444,
+        "NMI": 0.009116169885513288,
+        "mapped_accuracy": 0.8911439114391144,
+        "silhouette": 0.2982695311630623,
+        "mapping": {
+          "-1": 1,
+          "0": 0
+        }
+      },
+      "clusters": 2,
+      "noise_points": 532,
+      "selection_score": -0.03996132088939446
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "euclidean",
+        "eps": 1.5,
+        "min_samples": 10
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "euclidean",
+        "eps": 1.5,
+        "min_samples": 15
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "euclidean",
+        "eps": 1.5,
+        "min_samples": 20
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "euclidean",
+        "eps": 2.0,
+        "min_samples": 3
+      },
+      "validation": {
+        "ARI": -0.053390035143734096,
+        "NMI": 0.08340298282853262,
+        "mapped_accuracy": 0.6180811808118081,
+        "silhouette": 0.12123299552428858,
+        "mapping": {
+          "-1": 0,
+          "0": 1
+        }
+      },
+      "clusters": 17,
+      "noise_points": 261,
+      "selection_score": -0.6906745079463751
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "euclidean",
+        "eps": 2.0,
+        "min_samples": 5
+      },
+      "validation": {
+        "ARI": -0.0748612742777441,
+        "NMI": 0.07461049869676732,
+        "mapped_accuracy": 0.6125461254612546,
+        "silhouette": 0.12586886901823735,
+        "mapping": {
+          "-1": 1,
+          "0": 0
+        }
+      },
+      "clusters": 10,
+      "noise_points": 323,
+      "selection_score": -0.3551865492737124
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "euclidean",
+        "eps": 2.0,
+        "min_samples": 10
+      },
+      "validation": {
+        "ARI": -0.10644494806052344,
+        "NMI": 0.03895863870634668,
+        "mapped_accuracy": 0.8487084870848709,
+        "silhouette": 0.27265111996338803,
+        "mapping": {
+          "-1": 1,
+          "0": 0
+        }
+      },
+      "clusters": 3,
+      "noise_points": 457,
+      "selection_score": -0.053200032880369195
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "euclidean",
+        "eps": 2.0,
+        "min_samples": 15
+      },
+      "validation": {
+        "ARI": -0.07585056328264479,
+        "NMI": 0.024897325971027395,
+        "mapped_accuracy": 0.8726937269372693,
+        "silhouette": 0.5204959633818385,
+        "mapping": {
+          "-1": 1,
+          "0": 0
+        }
+      },
+      "clusters": 2,
+      "noise_points": 503,
+      "selection_score": -0.02150488805111283
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "euclidean",
+        "eps": 2.0,
+        "min_samples": 20
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "cosine",
+        "eps": 0.1,
+        "min_samples": 3
+      },
+      "validation": {
+        "ARI": -0.03533847141649587,
+        "NMI": 0.10338650014625528,
+        "mapped_accuracy": 0.6457564575645757,
+        "silhouette": 0.02554874116460985,
+        "mapping": {
+          "-1": 0,
+          "0": 1
+        }
+      },
+      "clusters": 9,
+      "noise_points": 244,
+      "selection_score": -0.26912272494599565
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "cosine",
+        "eps": 0.1,
+        "min_samples": 5
+      },
+      "validation": {
+        "ARI": -0.05833358533835157,
+        "NMI": 0.09514474259372029,
+        "mapped_accuracy": 0.6254612546125461,
+        "silhouette": 0.289711472530066,
+        "mapping": {
+          "-1": 1,
+          "0": 0
+        }
+      },
+      "clusters": 4,
+      "noise_points": 279,
+      "selection_score": -0.030593264786353522
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "cosine",
+        "eps": 0.1,
+        "min_samples": 10
+      },
+      "validation": {
+        "ARI": -0.08403727675008217,
+        "NMI": 0.0738795566912501,
+        "mapped_accuracy": 0.6439114391143912,
+        "silhouette": 0.41620976660339565,
+        "mapping": {
+          "-1": 1,
+          "0": 0
+        }
+      },
+      "clusters": 5,
+      "noise_points": 337,
+      "selection_score": -0.10720900419435878
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "cosine",
+        "eps": 0.1,
+        "min_samples": 15
+      },
+      "validation": {
+        "ARI": -0.08823787099936442,
+        "NMI": 0.06949903252848598,
+        "mapped_accuracy": 0.6549815498154982,
+        "silhouette": 0.5923079331888891,
+        "mapping": {
+          "-1": 1,
+          "0": 0
+        }
+      },
+      "clusters": 2,
+      "noise_points": 383,
+      "selection_score": 0.03416692920745277
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "cosine",
+        "eps": 0.1,
+        "min_samples": 20
+      },
+      "validation": {
+        "ARI": -0.08768130014762508,
+        "NMI": 0.06417516936356803,
+        "mapped_accuracy": 0.6697416974169742,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1,
+          "0": 0
+        }
+      },
+      "clusters": 1,
+      "noise_points": 417,
+      "selection_score": -0.024293465322778846
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "cosine",
+        "eps": 0.2,
+        "min_samples": 3
+      },
+      "validation": {
+        "ARI": 0.25926076452402613,
+        "NMI": 0.09954494329464822,
+        "mapped_accuracy": 0.8690036900369004,
+        "silhouette": null,
+        "mapping": {
+          "-1": 0,
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 61,
+      "selection_score": 0.043917637021585486
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "cosine",
+        "eps": 0.2,
+        "min_samples": 5
+      },
+      "validation": {
+        "ARI": 0.48535291220378884,
+        "NMI": 0.33032696098072345,
+        "mapped_accuracy": 0.9188191881918819,
+        "silhouette": 0.49755789644235754,
+        "mapping": {
+          "0": 0,
+          "1": 1
+        }
+      },
+      "clusters": 3,
+      "noise_points": 68,
+      "selection_score": 0.27405389825009613
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "cosine",
+        "eps": 0.2,
+        "min_samples": 10
+      },
+      "validation": {
+        "ARI": 0.09969780124161316,
+        "NMI": 0.1773016890747464,
+        "mapped_accuracy": 0.8247232472324724,
+        "silhouette": 0.2371004751286821,
+        "mapping": {
+          "-1": 0,
+          "0": 1
+        }
+      },
+      "clusters": 4,
+      "noise_points": 121,
+      "selection_score": 0.06613932745113014
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "cosine",
+        "eps": 0.2,
+        "min_samples": 15
+      },
+      "validation": {
+        "ARI": 0.05072699999704723,
+        "NMI": 0.16340774025288943,
+        "mapped_accuracy": 0.7767527675276753,
+        "silhouette": 0.4087181920173307,
+        "mapping": {
+          "-1": 0,
+          "0": 1
+        }
+      },
+      "clusters": 2,
+      "noise_points": 173,
+      "selection_score": 0.14744833065879348
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "cosine",
+        "eps": 0.2,
+        "min_samples": 20
+      },
+      "validation": {
+        "ARI": 0.03172966647797471,
+        "NMI": 0.14908617621414755,
+        "mapped_accuracy": 0.7472324723247232,
+        "silhouette": 0.4222918636597364,
+        "mapping": {
+          "-1": 0,
+          "0": 1
+        }
+      },
+      "clusters": 2,
+      "noise_points": 189,
+      "selection_score": 0.131650751859904
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "cosine",
+        "eps": 0.3,
+        "min_samples": 3
+      },
+      "validation": {
+        "ARI": 0.17901930886596115,
+        "NMI": 0.10823291866338566,
+        "mapped_accuracy": 0.9095940959409594,
+        "silhouette": null,
+        "mapping": {
+          "-1": 0,
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 9,
+      "selection_score": 0.05740266036080263
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "cosine",
+        "eps": 0.3,
+        "min_samples": 5
+      },
+      "validation": {
+        "ARI": 0.22065872673845752,
+        "NMI": 0.1285158616556084,
+        "mapped_accuracy": 0.9114391143911439,
+        "silhouette": null,
+        "mapping": {
+          "-1": 0,
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 12,
+      "selection_score": 0.07740885058549771
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "cosine",
+        "eps": 0.3,
+        "min_samples": 10
+      },
+      "validation": {
+        "ARI": 0.2191432994804687,
+        "NMI": 0.10384415109974997,
+        "mapped_accuracy": 0.9059040590405905,
+        "silhouette": null,
+        "mapping": {
+          "-1": 0,
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 17,
+      "selection_score": 0.05227588541709314
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "cosine",
+        "eps": 0.3,
+        "min_samples": 15
+      },
+      "validation": {
+        "ARI": 0.25161770894349267,
+        "NMI": 0.10974210814326356,
+        "mapped_accuracy": 0.9022140221402214,
+        "silhouette": null,
+        "mapping": {
+          "-1": 0,
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 25,
+      "selection_score": 0.05743583508053293
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "cosine",
+        "eps": 0.3,
+        "min_samples": 20
+      },
+      "validation": {
+        "ARI": 0.43848616976753485,
+        "NMI": 0.24303460746732547,
+        "mapped_accuracy": 0.9040590405904059,
+        "silhouette": -0.04156515681315588,
+        "mapping": {
+          "0": 0,
+          "1": 1
+        }
+      },
+      "clusters": 3,
+      "noise_points": 41,
+      "selection_score": 0.18925231964444725
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "cosine",
+        "eps": 0.5,
+        "min_samples": 3
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "cosine",
+        "eps": 0.5,
+        "min_samples": 5
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "cosine",
+        "eps": 0.5,
+        "min_samples": 10
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "cosine",
+        "eps": 0.5,
+        "min_samples": 15
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "cosine",
+        "eps": 0.5,
+        "min_samples": 20
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "cosine",
+        "eps": 0.7,
+        "min_samples": 3
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "cosine",
+        "eps": 0.7,
+        "min_samples": 5
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "cosine",
+        "eps": 0.7,
+        "min_samples": 10
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "cosine",
+        "eps": 0.7,
+        "min_samples": 15
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "cosine",
+        "eps": 0.7,
+        "min_samples": 20
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "cosine",
+        "eps": 1.0,
+        "min_samples": 3
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "cosine",
+        "eps": 1.0,
+        "min_samples": 5
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "cosine",
+        "eps": 1.0,
+        "min_samples": 10
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "cosine",
+        "eps": 1.0,
+        "min_samples": 15
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "cosine",
+        "eps": 1.0,
+        "min_samples": 20
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "cosine",
+        "eps": 1.5,
+        "min_samples": 3
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "cosine",
+        "eps": 1.5,
+        "min_samples": 5
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "cosine",
+        "eps": 1.5,
+        "min_samples": 10
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "cosine",
+        "eps": 1.5,
+        "min_samples": 15
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "cosine",
+        "eps": 1.5,
+        "min_samples": 20
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "cosine",
+        "eps": 2.0,
+        "min_samples": 3
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "cosine",
+        "eps": 2.0,
+        "min_samples": 5
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "cosine",
+        "eps": 2.0,
+        "min_samples": 10
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "cosine",
+        "eps": 2.0,
+        "min_samples": 15
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "metric": "cosine",
+        "eps": 2.0,
+        "min_samples": 20
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "euclidean",
+        "eps": 0.1,
+        "min_samples": 3
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "euclidean",
+        "eps": 0.1,
+        "min_samples": 5
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "euclidean",
+        "eps": 0.1,
+        "min_samples": 10
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "euclidean",
+        "eps": 0.1,
+        "min_samples": 15
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "euclidean",
+        "eps": 0.1,
+        "min_samples": 20
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "euclidean",
+        "eps": 0.2,
+        "min_samples": 3
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "euclidean",
+        "eps": 0.2,
+        "min_samples": 5
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "euclidean",
+        "eps": 0.2,
+        "min_samples": 10
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "euclidean",
+        "eps": 0.2,
+        "min_samples": 15
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "euclidean",
+        "eps": 0.2,
+        "min_samples": 20
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "euclidean",
+        "eps": 0.3,
+        "min_samples": 3
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "euclidean",
+        "eps": 0.3,
+        "min_samples": 5
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "euclidean",
+        "eps": 0.3,
+        "min_samples": 10
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "euclidean",
+        "eps": 0.3,
+        "min_samples": 15
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "euclidean",
+        "eps": 0.3,
+        "min_samples": 20
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "euclidean",
+        "eps": 0.5,
+        "min_samples": 3
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "euclidean",
+        "eps": 0.5,
+        "min_samples": 5
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "euclidean",
+        "eps": 0.5,
+        "min_samples": 10
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "euclidean",
+        "eps": 0.5,
+        "min_samples": 15
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "euclidean",
+        "eps": 0.5,
+        "min_samples": 20
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "euclidean",
+        "eps": 0.7,
+        "min_samples": 3
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "euclidean",
+        "eps": 0.7,
+        "min_samples": 5
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "euclidean",
+        "eps": 0.7,
+        "min_samples": 10
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "euclidean",
+        "eps": 0.7,
+        "min_samples": 15
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "euclidean",
+        "eps": 0.7,
+        "min_samples": 20
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "euclidean",
+        "eps": 1.0,
+        "min_samples": 3
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "euclidean",
+        "eps": 1.0,
+        "min_samples": 5
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "euclidean",
+        "eps": 1.0,
+        "min_samples": 10
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "euclidean",
+        "eps": 1.0,
+        "min_samples": 15
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "euclidean",
+        "eps": 1.0,
+        "min_samples": 20
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "euclidean",
+        "eps": 1.5,
+        "min_samples": 3
+      },
+      "validation": {
+        "ARI": -0.08410266004879535,
+        "NMI": 0.021937739424579838,
+        "mapped_accuracy": 0.8948339483394834,
+        "silhouette": 0.41158770511499615,
+        "mapping": {
+          "-1": 1,
+          "0": 0
+        }
+      },
+      "clusters": 13,
+      "noise_points": 498,
+      "selection_score": -0.5740032199850142
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "euclidean",
+        "eps": 1.5,
+        "min_samples": 5
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "euclidean",
+        "eps": 1.5,
+        "min_samples": 10
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "euclidean",
+        "eps": 1.5,
+        "min_samples": 15
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "euclidean",
+        "eps": 1.5,
+        "min_samples": 20
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "euclidean",
+        "eps": 2.0,
+        "min_samples": 3
+      },
+      "validation": {
+        "ARI": -0.07755963826294604,
+        "NMI": 0.07055088819129968,
+        "mapped_accuracy": 0.6328413284132841,
+        "silhouette": 0.11276496005656685,
+        "mapping": {
+          "-1": 1,
+          "0": 0
+        }
+      },
+      "clusters": 18,
+      "noise_points": 299,
+      "selection_score": -0.7570321376389586
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "euclidean",
+        "eps": 2.0,
+        "min_samples": 5
+      },
+      "validation": {
+        "ARI": -0.11093120531525887,
+        "NMI": 0.0533469685616836,
+        "mapped_accuracy": 0.8763837638376384,
+        "silhouette": 0.15267209930724263,
+        "mapping": {
+          "-1": 1,
+          "0": 0
+        }
+      },
+      "clusters": 8,
+      "noise_points": 382,
+      "selection_score": -0.28189288383684047
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "euclidean",
+        "eps": 2.0,
+        "min_samples": 10
+      },
+      "validation": {
+        "ARI": -0.09448618483375894,
+        "NMI": 0.029566647809085262,
+        "mapped_accuracy": 0.8819188191881919,
+        "silhouette": 0.2889547095630214,
+        "mapping": {
+          "-1": 1,
+          "0": 0
+        }
+      },
+      "clusters": 4,
+      "noise_points": 484,
+      "selection_score": -0.1150827986853797
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "euclidean",
+        "eps": 2.0,
+        "min_samples": 15
+      },
+      "validation": {
+        "ARI": -0.038888839013671815,
+        "NMI": 0.013076809877648202,
+        "mapped_accuracy": 0.8726937269372693,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1,
+          "0": 0
+        }
+      },
+      "clusters": 1,
+      "noise_points": 527,
+      "selection_score": -0.08553942628471344
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "euclidean",
+        "eps": 2.0,
+        "min_samples": 20
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1
+        }
+      },
+      "clusters": 0,
+      "noise_points": 542,
+      "selection_score": -0.15000000000000002
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "cosine",
+        "eps": 0.1,
+        "min_samples": 3
+      },
+      "validation": {
+        "ARI": -0.048471354522899544,
+        "NMI": 0.09395532697840156,
+        "mapped_accuracy": 0.8985239852398524,
+        "silhouette": 0.09385331823133676,
+        "mapping": {
+          "-1": 1,
+          "5": 0
+        }
+      },
+      "clusters": 9,
+      "noise_points": 259,
+      "selection_score": -0.2799376619514878
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "cosine",
+        "eps": 0.1,
+        "min_samples": 5
+      },
+      "validation": {
+        "ARI": -0.07144964962178725,
+        "NMI": 0.08356331760411954,
+        "mapped_accuracy": 0.6328413284132841,
+        "silhouette": 0.3442170872523304,
+        "mapping": {
+          "-1": 1,
+          "0": 0
+        }
+      },
+      "clusters": 6,
+      "noise_points": 294,
+      "selection_score": -0.14355845361359265
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "cosine",
+        "eps": 0.1,
+        "min_samples": 10
+      },
+      "validation": {
+        "ARI": -0.08641000011210573,
+        "NMI": 0.07215285878254675,
+        "mapped_accuracy": 0.6476014760147601,
+        "silhouette": 0.5215667765776567,
+        "mapping": {
+          "-1": 1,
+          "0": 0
+        }
+      },
+      "clusters": 3,
+      "noise_points": 363,
+      "selection_score": -0.011334226088301966
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "cosine",
+        "eps": 0.1,
+        "min_samples": 15
+      },
+      "validation": {
+        "ARI": -0.08984159358296837,
+        "NMI": 0.06675845659334997,
+        "mapped_accuracy": 0.6623616236162362,
+        "silhouette": 0.6060981436633106,
+        "mapping": {
+          "-1": 1,
+          "0": 0
+        }
+      },
+      "clusters": 2,
+      "noise_points": 393,
+      "selection_score": 0.03050384404722451
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "cosine",
+        "eps": 0.1,
+        "min_samples": 20
+      },
+      "validation": {
+        "ARI": -0.08891676681985221,
+        "NMI": 0.06247275771890534,
+        "mapped_accuracy": 0.6771217712177122,
+        "silhouette": null,
+        "mapping": {
+          "-1": 1,
+          "0": 0
+        }
+      },
+      "clusters": 1,
+      "noise_points": 421,
+      "selection_score": -0.026364880657478426
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "cosine",
+        "eps": 0.2,
+        "min_samples": 3
+      },
+      "validation": {
+        "ARI": 0.2611775262854029,
+        "NMI": 0.10799005366084474,
+        "mapped_accuracy": 0.8523985239852399,
+        "silhouette": null,
+        "mapping": {
+          "-1": 0,
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 80,
+      "selection_score": 0.050609979860106735
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "cosine",
+        "eps": 0.2,
+        "min_samples": 5
+      },
+      "validation": {
+        "ARI": 0.33572894372122286,
+        "NMI": 0.25721312567323174,
+        "mapped_accuracy": 0.8431734317343174,
+        "silhouette": 0.034244886565801214,
+        "mapping": {
+          "-1": 0,
+          "1": 1
+        }
+      },
+      "clusters": 5,
+      "noise_points": 91,
+      "selection_score": 0.09881829172489223
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "cosine",
+        "eps": 0.2,
+        "min_samples": 10
+      },
+      "validation": {
+        "ARI": 0.06670755930146344,
+        "NMI": 0.15233051675554818,
+        "mapped_accuracy": 0.7712177121771218,
+        "silhouette": 0.39221711179990687,
+        "mapping": {
+          "-1": 0,
+          "0": 1
+        }
+      },
+      "clusters": 4,
+      "noise_points": 158,
+      "selection_score": 0.03775487099909061
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "cosine",
+        "eps": 0.2,
+        "min_samples": 15
+      },
+      "validation": {
+        "ARI": 0.028105283791842378,
+        "NMI": 0.14656350095549078,
+        "mapped_accuracy": 0.7416974169741697,
+        "silhouette": 0.4213455047101076,
+        "mapping": {
+          "-1": 0,
+          "0": 1
+        }
+      },
+      "clusters": 2,
+      "noise_points": 192,
+      "selection_score": 0.12885132383371956
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "cosine",
+        "eps": 0.2,
+        "min_samples": 20
+      },
+      "validation": {
+        "ARI": 0.010153039925102497,
+        "NMI": 0.13360018316618597,
+        "mapped_accuracy": 0.7103321033210332,
+        "silhouette": 0.43657907436007454,
+        "mapping": {
+          "-1": 0,
+          "0": 1
+        }
+      },
+      "clusters": 2,
+      "noise_points": 209,
+      "selection_score": 0.11431974036175792
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "cosine",
+        "eps": 0.3,
+        "min_samples": 3
+      },
+      "validation": {
+        "ARI": 0.1914728693389868,
+        "NMI": 0.10061241373303154,
+        "mapped_accuracy": 0.9077490774907749,
+        "silhouette": null,
+        "mapping": {
+          "-1": 0,
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 12,
+      "selection_score": 0.04950540266292083
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "cosine",
+        "eps": 0.3,
+        "min_samples": 5
+      },
+      "validation": {
+        "ARI": 0.2191432994804687,
+        "NMI": 0.10384415109974997,
+        "mapped_accuracy": 0.9059040590405905,
+        "silhouette": null,
+        "mapping": {
+          "-1": 0,
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 17,
+      "selection_score": 0.05227588541709314
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "cosine",
+        "eps": 0.3,
+        "min_samples": 10
+      },
+      "validation": {
+        "ARI": 0.24032296520592575,
+        "NMI": 0.09878928070537586,
+        "mapped_accuracy": 0.8985239852398524,
+        "silhouette": null,
+        "mapping": {
+          "-1": 0,
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 27,
+      "selection_score": 0.04629850579762678
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "cosine",
+        "eps": 0.3,
+        "min_samples": 15
+      },
+      "validation": {
+        "ARI": 0.28401529476390214,
+        "NMI": 0.12341105632473362,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "-1": 0,
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 32,
+      "selection_score": 0.07045902680443841
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "cosine",
+        "eps": 0.3,
+        "min_samples": 20
+      },
+      "validation": {
+        "ARI": 0.41174769074198525,
+        "NMI": 0.23007544708388064,
+        "mapped_accuracy": 0.9077490774907749,
+        "silhouette": -0.03695607089475473,
+        "mapping": {
+          "0": 0,
+          "1": 1
+        }
+      },
+      "clusters": 3,
+      "noise_points": 55,
+      "selection_score": 0.17500164634587323
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "cosine",
+        "eps": 0.5,
+        "min_samples": 3
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "cosine",
+        "eps": 0.5,
+        "min_samples": 5
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "cosine",
+        "eps": 0.5,
+        "min_samples": 10
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "cosine",
+        "eps": 0.5,
+        "min_samples": 15
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "cosine",
+        "eps": 0.5,
+        "min_samples": 20
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "cosine",
+        "eps": 0.7,
+        "min_samples": 3
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "cosine",
+        "eps": 0.7,
+        "min_samples": 5
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "cosine",
+        "eps": 0.7,
+        "min_samples": 10
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "cosine",
+        "eps": 0.7,
+        "min_samples": 15
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "cosine",
+        "eps": 0.7,
+        "min_samples": 20
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "cosine",
+        "eps": 1.0,
+        "min_samples": 3
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "cosine",
+        "eps": 1.0,
+        "min_samples": 5
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "cosine",
+        "eps": 1.0,
+        "min_samples": 10
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "cosine",
+        "eps": 1.0,
+        "min_samples": 15
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "cosine",
+        "eps": 1.0,
+        "min_samples": 20
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "cosine",
+        "eps": 1.5,
+        "min_samples": 3
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "cosine",
+        "eps": 1.5,
+        "min_samples": 5
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "cosine",
+        "eps": 1.5,
+        "min_samples": 10
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "cosine",
+        "eps": 1.5,
+        "min_samples": 15
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "cosine",
+        "eps": 1.5,
+        "min_samples": 20
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "cosine",
+        "eps": 2.0,
+        "min_samples": 3
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "cosine",
+        "eps": 2.0,
+        "min_samples": 5
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "cosine",
+        "eps": 2.0,
+        "min_samples": 10
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "cosine",
+        "eps": 2.0,
+        "min_samples": 15
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "metric": "cosine",
+        "eps": 2.0,
+        "min_samples": 20
+      },
+      "validation": {
+        "ARI": 0.0,
+        "NMI": 0.0,
+        "mapped_accuracy": 0.9003690036900369,
+        "silhouette": null,
+        "mapping": {
+          "0": 1
+        }
+      },
+      "clusters": 1,
+      "noise_points": 0,
+      "selection_score": -0.05
+    }
+  ]
+}

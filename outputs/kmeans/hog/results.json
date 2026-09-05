@@ -1,0 +1,648 @@
+{
+  "model": "KMeans",
+  "feature": "hog",
+  "classes": [
+    "not_tumor",
+    "tumor"
+  ],
+  "selection_metric": "validation NMI",
+  "best_params": {
+    "pca_dim": 20,
+    "init": "k-means++",
+    "n_init": 10
+  },
+  "validation_metrics": {
+    "ARI": -0.013889410035667989,
+    "NMI": 0.019716061648058184,
+    "mapped_accuracy": 0.5202952029520295,
+    "silhouette": 0.20188164943423095,
+    "mapping": {
+      "0": 0,
+      "1": 1
+    }
+  },
+  "test_metrics": {
+    "ARI": 0.15145924919087678,
+    "NMI": 0.06594144538875127,
+    "mapped_accuracy": 0.7182741116751269,
+    "silhouette": 0.22247083470478918,
+    "mapping": {
+      "0": 0,
+      "1": 1
+    }
+  },
+  "grid_results": [
+    {
+      "params": {
+        "pca_dim": 10,
+        "init": "k-means++",
+        "n_init": 10
+      },
+      "validation": {
+        "ARI": -0.015145097935698681,
+        "NMI": 0.01875945919334497,
+        "mapped_accuracy": 0.525830258302583,
+        "silhouette": 0.24394095254497655,
+        "mapping": {
+          "0": 0,
+          "1": 1
+        }
+      }
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "init": "k-means++",
+        "n_init": 20
+      },
+      "validation": {
+        "ARI": -0.015145097935698681,
+        "NMI": 0.01875945919334497,
+        "mapped_accuracy": 0.525830258302583,
+        "silhouette": 0.24394095254497655,
+        "mapping": {
+          "0": 0,
+          "1": 1
+        }
+      }
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "init": "k-means++",
+        "n_init": 40
+      },
+      "validation": {
+        "ARI": -0.015145097935698681,
+        "NMI": 0.01875945919334497,
+        "mapped_accuracy": 0.525830258302583,
+        "silhouette": 0.24394095254497655,
+        "mapping": {
+          "0": 0,
+          "1": 1
+        }
+      }
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "init": "random",
+        "n_init": 10
+      },
+      "validation": {
+        "ARI": -0.015145097935698681,
+        "NMI": 0.01875945919334497,
+        "mapped_accuracy": 0.525830258302583,
+        "silhouette": 0.24394095254497655,
+        "mapping": {
+          "0": 0,
+          "1": 1
+        }
+      }
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "init": "random",
+        "n_init": 20
+      },
+      "validation": {
+        "ARI": -0.015145097935698681,
+        "NMI": 0.01875945919334497,
+        "mapped_accuracy": 0.525830258302583,
+        "silhouette": 0.24394095254497655,
+        "mapping": {
+          "0": 0,
+          "1": 1
+        }
+      }
+    },
+    {
+      "params": {
+        "pca_dim": 10,
+        "init": "random",
+        "n_init": 40
+      },
+      "validation": {
+        "ARI": -0.015145097935698681,
+        "NMI": 0.01875945919334497,
+        "mapped_accuracy": 0.525830258302583,
+        "silhouette": 0.24394095254497655,
+        "mapping": {
+          "0": 0,
+          "1": 1
+        }
+      }
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "init": "k-means++",
+        "n_init": 10
+      },
+      "validation": {
+        "ARI": -0.013889410035667989,
+        "NMI": 0.019716061648058184,
+        "mapped_accuracy": 0.5202952029520295,
+        "silhouette": 0.20188164943423095,
+        "mapping": {
+          "0": 0,
+          "1": 1
+        }
+      }
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "init": "k-means++",
+        "n_init": 20
+      },
+      "validation": {
+        "ARI": -0.013889410035667989,
+        "NMI": 0.019716061648058184,
+        "mapped_accuracy": 0.5202952029520295,
+        "silhouette": 0.20188164943423095,
+        "mapping": {
+          "0": 0,
+          "1": 1
+        }
+      }
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "init": "k-means++",
+        "n_init": 40
+      },
+      "validation": {
+        "ARI": -0.013889410035667989,
+        "NMI": 0.019716061648058184,
+        "mapped_accuracy": 0.5202952029520295,
+        "silhouette": 0.20188164943423095,
+        "mapping": {
+          "0": 0,
+          "1": 1
+        }
+      }
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "init": "random",
+        "n_init": 10
+      },
+      "validation": {
+        "ARI": -0.013889410035667989,
+        "NMI": 0.019716061648058184,
+        "mapped_accuracy": 0.5202952029520295,
+        "silhouette": 0.20188164943423095,
+        "mapping": {
+          "0": 0,
+          "1": 1
+        }
+      }
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "init": "random",
+        "n_init": 20
+      },
+      "validation": {
+        "ARI": -0.013889410035667989,
+        "NMI": 0.019716061648058184,
+        "mapped_accuracy": 0.5202952029520295,
+        "silhouette": 0.20188164943423095,
+        "mapping": {
+          "0": 0,
+          "1": 1
+        }
+      }
+    },
+    {
+      "params": {
+        "pca_dim": 20,
+        "init": "random",
+        "n_init": 40
+      },
+      "validation": {
+        "ARI": -0.013889410035667989,
+        "NMI": 0.019716061648058184,
+        "mapped_accuracy": 0.5202952029520295,
+        "silhouette": 0.20188164943423095,
+        "mapping": {
+          "0": 0,
+          "1": 1
+        }
+      }
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "init": "k-means++",
+        "n_init": 10
+      },
+      "validation": {
+        "ARI": -0.013889410035667989,
+        "NMI": 0.019716061648058184,
+        "mapped_accuracy": 0.5202952029520295,
+        "silhouette": 0.18514104808201645,
+        "mapping": {
+          "0": 0,
+          "1": 1
+        }
+      }
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "init": "k-means++",
+        "n_init": 20
+      },
+      "validation": {
+        "ARI": -0.013889410035667989,
+        "NMI": 0.019716061648058184,
+        "mapped_accuracy": 0.5202952029520295,
+        "silhouette": 0.18514104808201645,
+        "mapping": {
+          "0": 1,
+          "1": 0
+        }
+      }
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "init": "k-means++",
+        "n_init": 40
+      },
+      "validation": {
+        "ARI": -0.013889410035667989,
+        "NMI": 0.019716061648058184,
+        "mapped_accuracy": 0.5202952029520295,
+        "silhouette": 0.18514104808201645,
+        "mapping": {
+          "0": 0,
+          "1": 1
+        }
+      }
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "init": "random",
+        "n_init": 10
+      },
+      "validation": {
+        "ARI": -0.013889410035667989,
+        "NMI": 0.019716061648058184,
+        "mapped_accuracy": 0.5202952029520295,
+        "silhouette": 0.18514104808201645,
+        "mapping": {
+          "0": 0,
+          "1": 1
+        }
+      }
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "init": "random",
+        "n_init": 20
+      },
+      "validation": {
+        "ARI": -0.013889410035667989,
+        "NMI": 0.019716061648058184,
+        "mapped_accuracy": 0.5202952029520295,
+        "silhouette": 0.18514104808201645,
+        "mapping": {
+          "0": 0,
+          "1": 1
+        }
+      }
+    },
+    {
+      "params": {
+        "pca_dim": 30,
+        "init": "random",
+        "n_init": 40
+      },
+      "validation": {
+        "ARI": -0.013889410035667989,
+        "NMI": 0.019716061648058184,
+        "mapped_accuracy": 0.5202952029520295,
+        "silhouette": 0.18514104808201645,
+        "mapping": {
+          "0": 0,
+          "1": 1
+        }
+      }
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "init": "k-means++",
+        "n_init": 10
+      },
+      "validation": {
+        "ARI": -0.013889410035667989,
+        "NMI": 0.019716061648058184,
+        "mapped_accuracy": 0.5202952029520295,
+        "silhouette": 0.16767372307664963,
+        "mapping": {
+          "0": 0,
+          "1": 1
+        }
+      }
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "init": "k-means++",
+        "n_init": 20
+      },
+      "validation": {
+        "ARI": -0.013889410035667989,
+        "NMI": 0.019716061648058184,
+        "mapped_accuracy": 0.5202952029520295,
+        "silhouette": 0.16767372307664963,
+        "mapping": {
+          "0": 0,
+          "1": 1
+        }
+      }
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "init": "k-means++",
+        "n_init": 40
+      },
+      "validation": {
+        "ARI": -0.013889410035667989,
+        "NMI": 0.019716061648058184,
+        "mapped_accuracy": 0.5202952029520295,
+        "silhouette": 0.16767372307664963,
+        "mapping": {
+          "0": 0,
+          "1": 1
+        }
+      }
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "init": "random",
+        "n_init": 10
+      },
+      "validation": {
+        "ARI": -0.01431703766172325,
+        "NMI": 0.01939459278065914,
+        "mapped_accuracy": 0.522140221402214,
+        "silhouette": 0.16775394735354754,
+        "mapping": {
+          "0": 1,
+          "1": 0
+        }
+      }
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "init": "random",
+        "n_init": 20
+      },
+      "validation": {
+        "ARI": -0.01431703766172325,
+        "NMI": 0.01939459278065914,
+        "mapped_accuracy": 0.522140221402214,
+        "silhouette": 0.16775394735354754,
+        "mapping": {
+          "0": 1,
+          "1": 0
+        }
+      }
+    },
+    {
+      "params": {
+        "pca_dim": 50,
+        "init": "random",
+        "n_init": 40
+      },
+      "validation": {
+        "ARI": -0.013889410035667989,
+        "NMI": 0.019716061648058184,
+        "mapped_accuracy": 0.5202952029520295,
+        "silhouette": 0.16767372307664963,
+        "mapping": {
+          "0": 1,
+          "1": 0
+        }
+      }
+    },
+    {
+      "params": {
+        "pca_dim": 80,
+        "init": "k-means++",
+        "n_init": 10
+      },
+      "validation": {
+        "ARI": -0.013889410035667989,
+        "NMI": 0.019716061648058184,
+        "mapped_accuracy": 0.5202952029520295,
+        "silhouette": 0.15305919279620964,
+        "mapping": {
+          "0": 0,
+          "1": 1
+        }
+      }
+    },
+    {
+      "params": {
+        "pca_dim": 80,
+        "init": "k-means++",
+        "n_init": 20
+      },
+      "validation": {
+        "ARI": -0.013889410035667989,
+        "NMI": 0.019716061648058184,
+        "mapped_accuracy": 0.5202952029520295,
+        "silhouette": 0.15305919279620964,
+        "mapping": {
+          "0": 0,
+          "1": 1
+        }
+      }
+    },
+    {
+      "params": {
+        "pca_dim": 80,
+        "init": "k-means++",
+        "n_init": 40
+      },
+      "validation": {
+        "ARI": -0.013889410035667989,
+        "NMI": 0.019716061648058184,
+        "mapped_accuracy": 0.5202952029520295,
+        "silhouette": 0.15305919279620964,
+        "mapping": {
+          "0": 0,
+          "1": 1
+        }
+      }
+    },
+    {
+      "params": {
+        "pca_dim": 80,
+        "init": "random",
+        "n_init": 10
+      },
+      "validation": {
+        "ARI": -0.013889410035667989,
+        "NMI": 0.019716061648058184,
+        "mapped_accuracy": 0.5202952029520295,
+        "silhouette": 0.15305919279620964,
+        "mapping": {
+          "0": 0,
+          "1": 1
+        }
+      }
+    },
+    {
+      "params": {
+        "pca_dim": 80,
+        "init": "random",
+        "n_init": 20
+      },
+      "validation": {
+        "ARI": -0.013889410035667989,
+        "NMI": 0.019716061648058184,
+        "mapped_accuracy": 0.5202952029520295,
+        "silhouette": 0.15305919279620964,
+        "mapping": {
+          "0": 0,
+          "1": 1
+        }
+      }
+    },
+    {
+      "params": {
+        "pca_dim": 80,
+        "init": "random",
+        "n_init": 40
+      },
+      "validation": {
+        "ARI": -0.013889410035667989,
+        "NMI": 0.019716061648058184,
+        "mapped_accuracy": 0.5202952029520295,
+        "silhouette": 0.15305919279620964,
+        "mapping": {
+          "0": 0,
+          "1": 1
+        }
+      }
+    },
+    {
+      "params": {
+        "pca_dim": 100,
+        "init": "k-means++",
+        "n_init": 10
+      },
+      "validation": {
+        "ARI": -0.013889410035667989,
+        "NMI": 0.019716061648058184,
+        "mapped_accuracy": 0.5202952029520295,
+        "silhouette": 0.14678137291197285,
+        "mapping": {
+          "0": 0,
+          "1": 1
+        }
+      }
+    },
+    {
+      "params": {
+        "pca_dim": 100,
+        "init": "k-means++",
+        "n_init": 20
+      },
+      "validation": {
+        "ARI": -0.013889410035667989,
+        "NMI": 0.019716061648058184,
+        "mapped_accuracy": 0.5202952029520295,
+        "silhouette": 0.14678137291197285,
+        "mapping": {
+          "0": 0,
+          "1": 1
+        }
+      }
+    },
+    {
+      "params": {
+        "pca_dim": 100,
+        "init": "k-means++",
+        "n_init": 40
+      },
+      "validation": {
+        "ARI": -0.013889410035667989,
+        "NMI": 0.019716061648058184,
+        "mapped_accuracy": 0.5202952029520295,
+        "silhouette": 0.14678137291197285,
+        "mapping": {
+          "0": 0,
+          "1": 1
+        }
+      }
+    },
+    {
+      "params": {
+        "pca_dim": 100,
+        "init": "random",
+        "n_init": 10
+      },
+      "validation": {
+        "ARI": -0.013889410035667989,
+        "NMI": 0.019716061648058184,
+        "mapped_accuracy": 0.5202952029520295,
+        "silhouette": 0.14678137291197285,
+        "mapping": {
+          "0": 0,
+          "1": 1
+        }
+      }
+    },
+    {
+      "params": {
+        "pca_dim": 100,
+        "init": "random",
+        "n_init": 20
+      },
+      "validation": {
+        "ARI": -0.013889410035667989,
+        "NMI": 0.019716061648058184,
+        "mapped_accuracy": 0.5202952029520295,
+        "silhouette": 0.14678137291197285,
+        "mapping": {
+          "0": 0,
+          "1": 1
+        }
+      }
+    },
+    {
+      "params": {
+        "pca_dim": 100,
+        "init": "random",
+        "n_init": 40
+      },
+      "validation": {
+        "ARI": -0.013889410035667989,
+        "NMI": 0.019716061648058184,
+        "mapped_accuracy": 0.5202952029520295,
+        "silhouette": 0.14678137291197285,
+        "mapping": {
+          "0": 0,
+          "1": 1
+        }
+      }
+    }
+  ]
+}

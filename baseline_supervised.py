@@ -13,7 +13,7 @@ from feature_extraction_handcrafted import extract_features as extract_hand
 
 
 SPLITS_DIR = "splits_brain_tumor"
-FEATURE_NAME = "hog"  #"handcrafted"
+FEATURE_NAME = "handcrafted"  #"handcrafted"
 OUT_DIR = Path("outputs") / "baselines" / "supervised" / FEATURE_NAME
 
 GRID_C = [0.1, 1.0, 10.0]

@@ -1,100 +1,126 @@
+"""Create reproducible binary splits without changing the original archive."""
+
+from hashlib import sha256
+import json
 from pathlib import Path
 import random
 import shutil
-import json
-from typing import List
-
-IMG_EXTS = {".jpg", ".jpeg", ".png", ".bmp", ".tif", ".tiff", ".webp"}
 
 
-def list_images(folder: Path) -> List[Path]:
-    return [p for p in folder.rglob("*") if p.is_file() and p.suffix.lower() in IMG_EXTS]
+IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".bmp", ".tif", ".tiff", ".webp"}
+CLASS_TO_LABEL = {"not_tumor": 0, "tumor": 1}
+SOURCE_TO_BINARY = {
+    "no_tumor": "not_tumor",
+    "glioma_tumor": "tumor",
+    "meningioma_tumor": "tumor",
+    "pituitary_tumor": "tumor",
+}
 
 
-def ensure_empty_dir(p: Path):
-    if p.exists():
-        shutil.rmtree(p)
-    p.mkdir(parents=True, exist_ok=True)
+def list_images(folder: Path) -> list[Path]:
+    return sorted(
+        path for path in folder.rglob("*")
+        if path.is_file() and path.suffix.lower() in IMAGE_EXTENSIONS
+    )
 
 
-def copy_files(files: List[Path], dst_dir: Path):
-    dst_dir.mkdir(parents=True, exist_ok=True)
-    for f in files:
-        shutil.copy2(f, dst_dir / f.name)
+def file_hash(path: Path) -> str:
+    digest = sha256()
+    with path.open("rb") as stream:
+        for chunk in iter(lambda: stream.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
 
 
-def split_train_val_test(
-    dataset_root: str,
-    out_dir: str = "splits_brain_tumor",
-    val_ratio: float = 0.15,
+def collect(root: Path) -> list[tuple[Path, str, str]]:
+    records = []
+    for source_class, binary_class in SOURCE_TO_BINARY.items():
+        for path in list_images(root / source_class):
+            records.append((path, source_class, binary_class))
+    return records
+
+
+def copy_records(records, destination: Path) -> None:
+    for source, source_class, binary_class in records:
+        target_dir = destination / binary_class
+        target_dir.mkdir(parents=True, exist_ok=True)
+        target = target_dir / f"{source_class}__{source.name}"
+        shutil.copy2(source, target)
+
+
+def prepare_dataset(
+    dataset_root: str = "archive",
+    output_dir: str = "splits_brain_tumor",
+    validation_ratio: float = 0.20,
     seed: int = 42,
-):
-    random.seed(seed)
-
-    dataset_root = Path(dataset_root)
-    train_root = dataset_root / "Training"
-    test_root  = dataset_root / "Testing"
-    out_dir    = Path(out_dir)
-
-    if not train_root.exists() or not test_root.exists():
+) -> None:
+    source_root = Path(dataset_root)
+    train_root = source_root / "Training"
+    test_root = source_root / "Testing"
+    if not train_root.is_dir() or not test_root.is_dir():
         raise FileNotFoundError(
-            f"Expected {train_root} and {test_root}. "
-            "Point dataset_root to the folder that contains Training/ and Testing/."
+            f"Expected {train_root} and {test_root}; archive was not modified."
         )
 
-    # Prepare output dirs
-    ensure_empty_dir(out_dir)
-    (out_dir / "train").mkdir()
-    (out_dir / "val").mkdir()
-    (out_dir / "test").mkdir()
-
-    classes = sorted([d.name for d in train_root.iterdir() if d.is_dir()])
-    if not classes:
-        raise RuntimeError(f"No class folders found in {train_root}")
-
-    class_to_label = {cls: i for i, cls in enumerate(classes)}
-    with open(out_dir / "labels.json", "w", encoding="utf-8") as f:
-        json.dump({"classes": classes, "class_to_label": class_to_label}, f, indent=2)
-
-    # Split Training -> train/val
-    for cls in classes:
-        cls_dir = train_root / cls
-        imgs = list_images(cls_dir)
-        if len(imgs) == 0:
-            raise RuntimeError(f"No images found in {cls_dir}")
-
-        random.shuffle(imgs)
-        n_val = int(round(len(imgs) * val_ratio))
-        val_imgs = imgs[:n_val]
-        train_imgs = imgs[n_val:]
-
-        copy_files(train_imgs, out_dir / "train" / cls)
-        copy_files(val_imgs,   out_dir / "val"   / cls)
-
-    # Copy Testing -> test
-    test_classes = sorted([d.name for d in test_root.iterdir() if d.is_dir()])
-    for cls in test_classes:
-        imgs = list_images(test_root / cls)
-        if len(imgs) == 0:
+    test_records = collect(test_root)
+    test_hashes = {file_hash(record[0]) for record in test_records}
+    unique_training = []
+    seen_training_hashes = set()
+    excluded = 0
+    for record in collect(train_root):
+        digest = file_hash(record[0])
+        if digest in test_hashes or digest in seen_training_hashes:
+            excluded += 1
             continue
-        copy_files(imgs, out_dir / "test" / cls)
+        seen_training_hashes.add(digest)
+        unique_training.append(record)
 
-    def count_split(split: str):
-        return sum(1 for _ in (out_dir / split).rglob("*") if _.is_file())
+    rng = random.Random(seed)
+    training_records = []
+    validation_records = []
+    for binary_class in CLASS_TO_LABEL:
+        group = [r for r in unique_training if r[2] == binary_class]
+        rng.shuffle(group)
+        validation_size = round(len(group) * validation_ratio)
+        validation_records.extend(group[:validation_size])
+        training_records.extend(group[validation_size:])
 
-    print("Done.")
-    print("Classes:", classes)
-    print("Saved mapping to:", out_dir / "labels.json")
-    print("Counts:",
-          "train =", count_split("train"),
-          "val   =", count_split("val"),
-          "test  =", count_split("test"))
+    destination = Path(output_dir)
+    if destination.exists():
+        shutil.rmtree(destination)
+    for split in ("train", "val", "test"):
+        for class_name in CLASS_TO_LABEL:
+            (destination / split / class_name).mkdir(parents=True, exist_ok=True)
+
+    copy_records(training_records, destination / "train")
+    copy_records(validation_records, destination / "val")
+    copy_records(test_records, destination / "test")
+
+    metadata = {
+        "classes": list(CLASS_TO_LABEL),
+        "class_to_label": CLASS_TO_LABEL,
+        "source_to_binary": SOURCE_TO_BINARY,
+        "seed": seed,
+        "validation_ratio": validation_ratio,
+        "duplicates_excluded_from_training": excluded,
+    }
+    (destination / "labels.json").write_text(
+        json.dumps(metadata, indent=2), encoding="utf-8"
+    )
+
+    print("Binary dataset prepared from archive (archive was not modified).")
+    for split, records in (
+        ("train", training_records),
+        ("val", validation_records),
+        ("test", test_records),
+    ):
+        counts = {
+            class_name: sum(r[2] == class_name for r in records)
+            for class_name in CLASS_TO_LABEL
+        }
+        print(f"{split}: {len(records)} images {counts}")
+    print(f"Excluded duplicate/leaking training images: {excluded}")
 
 
 if __name__ == "__main__":
-    split_train_val_test(
-        dataset_root="Dataset",
-        out_dir="splits_brain_tumor",
-        val_ratio=0.15,
-        seed=42,
-    )
+    prepare_dataset()

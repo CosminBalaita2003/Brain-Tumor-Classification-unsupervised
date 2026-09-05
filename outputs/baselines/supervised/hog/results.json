@@ -1,0 +1,35 @@
+{
+  "baseline": "supervised_linear_svc",
+  "feature": "hog",
+  "classes": [
+    "not_tumor",
+    "tumor"
+  ],
+  "best_by": "macro_f1_on_val",
+  "best_C": 0.1,
+  "val_curve": [
+    {
+      "C": 0.1,
+      "val_macro_f1": 0.8725134408602151
+    },
+    {
+      "C": 1.0,
+      "val_macro_f1": 0.8725134408602151
+    },
+    {
+      "C": 10.0,
+      "val_macro_f1": 0.8725134408602151
+    }
+  ],
+  "test_metrics": {
+    "accuracy": 0.748730964467005,
+    "balanced_accuracy": 0.7802109078925688,
+    "macro_f1": 0.7244307544490522
+  },
+  "artifacts": {
+    "plots": [
+      "val_macro_f1_vs_C.png",
+      "confusion_matrix_test.png"
+    ]
+  }
+}
